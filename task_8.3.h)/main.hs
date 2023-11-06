@@ -42,7 +42,7 @@ divide :: [Int] -> Int
 divide a = r z (s plus [s le [s multiply [u 4 2, s n [u 4 3]], u 4 1], u 4 4]) a $ head a
 
 modul :: [Int] -> Int
-modul a = limited_minus [head a, multiply [head $ tail a, divide a]]
+modul a = s limited_minus [u 2 1, s multiply [u 2 2, s divide [u 2 1, u 2 2]]] a
 
 --  res div (y * (res mod y <= 0) + 1  - (res mod y <= 0))
 -- func 1 = x / y^k, witk k = max
